@@ -1,0 +1,73 @@
+<html>
+<head>
+<style>
+body{margin:0;}
+ #right{background:#FF6655; height:600px; width:85%; float:left; margin-left:3%;}
+.box{background:dodgerblue; height:300px; width:300px; margin-left:10%; margin-top:50px;}
+</style>
+
+<script>
+	function Myload()
+	{
+		Closeall();
+	}
+	function Closeall()
+	{
+		var arr = ['d1','d2','d3','d4','d5','d6'];
+		for(var i=0;i<arr.length;i++)
+		{
+			document.getElementById(arr[i]).style.display="none";
+		}
+	}
+	function Multi(arg)
+	{
+		Closeall();
+		var arr = ['d1','d2','d3','d4','d5','d6'];
+		document.getElementById(arr[arg]).style.display="block";
+	}
+</script>
+</head>
+<body onload="Myload()">
+	<div id="left">
+		<a href="#" onclick="Multi(0)">Apple</a><br><br>
+		<a href="#" onclick="Multi(1)">Samsung</a><br><br>
+		<a href="#" onclick="Multi(2)">Mi</a><br><br>
+		<a href="#" onclick="Multi(3)">Vivo</a><br><br>
+		<a href="#" onclick="Multi(4)">Nokia</a><br><br>
+		<a href="#" onclick="Multi(5)">Oppo</a><br><br>
+	</div>
+	<div id="right">
+		<div id="d1">
+			<div class="box">
+				Apple 
+			</div>
+		</div>
+		<div id="d2">
+			<div class="box">
+				Samsung 
+			</div>
+		</div>
+		<div id="d3">
+			<img src="5.jpg" width="300px">
+			<img src="6.jpg" width="300px">
+			<img src="7.jpg" width="300px">
+			<img src="8.jpg" width="300px">
+		</div>
+		<div id="d4">
+			<div class="box">
+				Vivo 
+			</div>
+		</div>
+		<div id="d5">
+			<div class="box">
+				Nokia 
+			</div>
+		</div>
+		<div id="d6">
+			<div class="box">
+				Oppo 
+			</div>
+		</div>
+	</div>
+</body>
+</html>

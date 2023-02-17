@@ -1,0 +1,147 @@
+ <html>
+   <head>
+     <style>
+ 	  body{padding:0;margin:0;}
+      #home{background:;height:100px;width:100%;float:left}
+      .Qs{background:;height:400px;width:300px;float:left;margin-left:20%;margin-top:3%;}	 
+	   div{font-family:arial;font-size:22px;font-weight:bold;}
+	  .new{background:orange; width:900px; height:200px;  display:none;}
+      .bttn{display:block;}
+	  .bttn button{background:red;border:none;padding:8px 22px;float:left;margin-left:22%;margin-right:2%;}
+       .new  input{padding:22px 30px;}
+   </style>
+      <script>
+ 	       function Blink()
+ 		      {
+ 			   var txt = document.getElementById("blink");
+ 			     if(txt.style.color == 'black')
+ 			       {
+ 			        txt.style.color='red'; 
+ 				   }
+ 			 else if(txt.style.color=='red')
+ 			    {
+ 			      txt.style.color ='blue';
+ 			    }
+ 			 else if(txt.style.color == 'blue')
+ 			      {
+ 				     txt.style.color='orange';
+ 				  }
+ 			   else
+ 			   {
+ 			    	txt.style.color='black';
+ 			   }
+ 		  setTimeout('Blink()',100); 
+ 	}
+	--> Option This Question  -->
+		function goto(Arg)
+	{
+		var arr = ['d0','d1','d2','d3','d4','d5','d6'];
+		for(i=0;i<7;i++)
+		{
+			if(i!=Arg)
+			{
+				document.getElementById(arr[i]).style.display="none";
+			}
+			else
+			{
+				document.getElementById(arr[i]).style.display="block";
+			}
+		}
+	}
+      </script>
+ </head>
+  <body onclick ="MyLoad()" onload="Blink()">
+      <div id="home">
+ 	     <p   style="font-size:42px;font-weight:bold;text-align:center" id="blink">UPSC Online TEST (2019-20)</p><hr>
+ 	  </div>
+<div class = "Qs">
+    	<div id="d0" class = "new" style="display:block;">
+		<h1>Terms & condtions</h1>
+		<ol>
+			<li>Total 5 Question</li>
+			<li>you have to attempt all Questions</li> 
+		</ol>
+		<div class="bttn" class = "new">
+			<button value="Next" onclick="goto(1)">Next</button>
+		</div>
+	</div>
+	<div id="d1" class = "new">      
+	Question 1:-<br>
+		<ol>
+			<li>Ans 1<input type="checkbox" name="Qn"></li>
+			<li>Ans 2<input type="checkbox" name="Qn"></li>
+			<li>Ans 3<input type="checkbox" name="Qn"></li>
+			<li>Ans 4<input type="checkbox" name="Qn"></li>
+		</ol>
+		<div class="bttn" class = "new">
+			<button value="Pre" onclick="goto(0)">Pre</button>
+			<button value="Next" onclick="goto(2)">Next</button>
+		</div>
+	</div>
+	
+	<div id="d2" class = "new">
+	Question 2:-<br>
+		<ol>
+			<li>Ans 1</li>
+			<li>Ans 2</li>
+			<li>Ans 3</li>
+			<li>Ans 4</li>
+		</ol>
+		<div class="bttn" class = "new">
+			<button value="Pre" onclick="goto(1)">Pre</button>
+			<button value="Next" onclick="goto(3)">Next</button>
+		</div>
+	</div>
+	
+	<div id="d3" class = "new">
+	Question 3:-<br>
+		<ol>
+			<li>Ans 1</li>
+			<li>Ans 2</li>
+			<li>Ans 3</li>
+			<li>Ans 4</li>
+		</ol>
+		<div class="bttn" class = "new">
+			<button value="Pre" onclick="goto(2)">Pre</button>
+			<button value="Next" onclick="goto(4)">Next</button>
+		</div>
+	</div>
+
+	<div id="d4" class = "new">
+	Question 4:-<br>
+		<ol>
+			<li>Ans 1</li>
+			<li>Ans 2</li>
+			<li>Ans 3</li>
+			<li>Ans 4</li>
+		</ol>
+		<div class="bttn" class = "new">
+			<button value="Pre" onclick="goto(3)">Pre</button>
+			<button value="Next" onclick="goto(5)" onclick="Submit()">Next</button>
+		</div>
+	</div>
+	
+	<div id="d5" class = "new">
+	Question 5:-<br>
+		<ol>
+			<li>Ans 1</li>
+			<li>Ans 2</li>
+			<li>Ans 3</li>
+			<li>Ans 4</li>
+		</ol>
+		<div class="bttn"class = "new">
+			<button value="Pre" onclick="goto(4)">Pre</button>
+			<button value="Next" onclick="goto(6)">Next</button>
+		</div>
+	</div>
+	<div id="d6" class = "new">
+			<h1>All </h1>
+	  Question 1:<span id="dA"></span>
+	  Question 2:<span id="dB"></span>
+	  <span></span>
+	  <span></span>
+	  <span></span>
+	</div>
+</div>
+  </body>
+</html>
