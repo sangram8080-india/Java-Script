@@ -1,0 +1,31 @@
+<html>
+<head>
+    <script>
+        var hindi = prompt("Hindi");		
+        var english = prompt("English");		
+        var physics = prompt("Physics");		
+        var chemistry = prompt("Chemistry");		
+        var math = prompt("Math");
+		var total = parseInt(hindi)+parseInt(english)+parseInt(physics)+parseInt(chemistry)+parseInt(math);	
+           	
+		document.write(total);
+		document.write("<br>");
+		
+		var per = (total*100)/500;
+		
+		document.write(per);
+		
+		if(per>33)
+		{
+		document.write("pass");
+		}
+		else
+		{
+		document.write("fail");
+		}
+    </script>
+</head>
+    <body>
+
+    </body>
+</html>

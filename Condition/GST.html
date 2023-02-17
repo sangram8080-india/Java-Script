@@ -1,0 +1,53 @@
+<html>
+<head>
+    <script>
+	var p1 = parseInt(prompt("Enter first product price"));
+	var p2 = parseInt(prompt("Enter second product price"));
+	var p3 = parseInt(prompt("Enter third product price"));
+	var total = p1+p2+p3;
+	document.write("Total is "+total);
+	var dis,after,gst,payble;
+	if(total>=30000)
+	{
+		dis = total * 0.30;
+		document.write("<br>"+"Discount is "+dis);
+		
+		after = total - dis;
+		document.write("<br>"+"After Discount "+after);	
+		gst = after * 0.21;
+		document.write("<br>"+"Add GST "+gst);
+		payble = after + gst;
+		document.write("<br>"+"Payble Amount "+payble);
+	}
+	
+	else if(total>=20000)
+	{
+		dis = total * 0.21;
+		document.write("<br>"+"Discount is "+dis);
+		
+		after = total - dis;
+		document.write("<br>"+"After Discount "+after);	
+		gst = after * 0.14;
+		document.write("<br>"+"Add GST "+gst);
+		payble = after + gst;
+		document.write("<br>"+"Payble Amount "+payble);
+	}
+	else if(total>=10000)
+	{
+		dis = total * 0.14;
+		document.write("<br>"+"Discount is "+dis);
+		
+		after = total - dis;
+		document.write("<br>"+"After Discount "+after);	
+		gst = after * 0.07;
+		document.write("<br>"+"Add GST "+gst);
+		payble = after + gst;
+		document.write("<br>"+"Payble Amount "+payble);
+	}
+	</script>
+</head>
+    <body>
+	
+	 
+    </body> 
+</html>

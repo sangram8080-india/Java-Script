@@ -1,0 +1,27 @@
+<html>
+<head>
+    <script>
+	function perfact()
+	{
+	var num = parseInt(prompt("Check perfact number"));
+	var sum=0;
+	for(i=1; i<num; i++)
+	{
+		if(num%i==0)
+		{
+			sum = sum+i;
+		}
+	}
+		if(sum==num)
+			document.write("This is perfact number :: " +num);
+		else
+			document.write("This is not perfact number :: " +num);
+	}
+	perfact();
+	</script>
+</head>
+    <body>
+	
+
+    </body>
+</html>
