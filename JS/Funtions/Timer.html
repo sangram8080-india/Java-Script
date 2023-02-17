@@ -1,0 +1,46 @@
+<html>
+<head>
+<style>
+#info{background:lightgreen; height:400px;}
+#msg{background:orange; height:400px; display:none;}
+#home{background:red;height: 400px; display:none;}
+</style>
+
+<script>
+	function Load(Arg)
+	{
+		var val = document.getElementById("count");
+		val.innerHTML = "Wait for<br> "+ Arg + "<br>Seconds";
+		
+		if(Arg==0)
+		{
+			document.getElementById("info").style.display="none";
+			document.getElementById("msg").style.display="block";
+				
+			document.getElementById("count").style.display="none";
+		}
+		else
+		{
+			Arg--;
+			setTimeout('Load('+Arg+')',100);
+		}
+	}
+</script>
+
+
+</head>
+<body onload="Load(10)">
+	<div id="count" style="text-align:center; font-size:38px">
+	
+	</div>
+	<div id="info">
+		
+	</div>
+  <div id="home">
+  
+    </div>
+	<div id="msg">
+		Time Out
+	</div>
+</body>
+</html>

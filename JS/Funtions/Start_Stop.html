@@ -1,0 +1,23 @@
+<html>
+<head>
+	<script>
+		var count = 0;
+		var time;
+		function Start()
+		{
+			document.getElementById("txt").value = count;
+			count++;
+			time = setTimeout('Start()',100);
+		}
+		function Stop()
+		{
+			clearTimeout(time);
+		}
+	</script>	
+</head>
+<body>
+	<input type="button" value="Start">
+	<input type="text" id="txt" value="0">
+	<input type="button" value="Stop" onclick="Stop()">
+</body>
+</html>

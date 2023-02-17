@@ -1,0 +1,27 @@
+<html>
+<head>
+	<script>
+		function Submit()
+		{
+			var g = document.getElementsByName("gen");
+			var gen="";
+		
+			for(var i=0;i<g.length;i++)
+			{
+				if(g[i].checked)
+				{
+					gen = g[i].value;
+				}
+			}
+			document.getElementById("msg").innerHTML = gen;
+		}
+	</script>
+</head>
+<body>
+	Male <input value="Male" type="radio" name="gen"> 
+	Female <input value="Female" type="radio" name="gen">
+	<br><br>
+	<input type="button" value="Submit"  onclick="Submit()"><br><br>
+	<span id="msg"></span>
+</body>
+</html>

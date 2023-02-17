@@ -1,0 +1,25 @@
+<html>
+<head>
+	<script>
+	     var arr = ['5.jpg','6.jpg','7.jpg','8.jpg'];
+		var i =0;
+		function Slide()
+		{
+			document.getElementById("image").src = arr[i];
+			if(i<arr.length)
+			{
+				i++;
+			}
+			else
+			{
+				i = 0;
+			}
+			setTimeout('Slide()',700);
+		}
+
+	</script>
+</head>
+<body>
+   
+</body>
+</html>

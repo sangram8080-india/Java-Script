@@ -1,0 +1,38 @@
+<html>
+<head>
+<style>
+#side{background:#ccc; height:600px; width:10%; float:left;}
+#side ul li{margin-top:30px;}
+#pop{background:#ff5577; height:400px; width:500px; position:absolute;
+top:130px; left:39%; display:none;}
+#pop a{text-decoration:none;}
+</style>
+	<script>
+		function Click(Arg)
+		{
+			if(Arg==1)
+			{
+				document.getElementById("pop").style.display="block";
+			}
+			if(Arg==0)
+			{
+				document.getElementById("pop").style.display="none";
+			}
+		}
+	</script>
+</head>
+<body>
+	<div id="pop">
+		<a href="#" onclick="Click(0)" style="font-size:30px; float:right;">X</a>
+	</div>
+	<div id="side">
+		<ul>
+			<li><a href="#" onclick="Click(1)">Home</a></li>
+			<li><a href="#" onclick="Click(1)">About</a></li>
+			<li><a href="#" onclick="Click(1)">Service</a></li>
+			<li><a href="#" onclick="Click(1)">Gallery</a></li>
+			<li><a href="#" onclick="Click(1)">Add</a></li>
+		</ul>
+	</div>
+</body>
+</html>

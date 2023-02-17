@@ -1,0 +1,18 @@
+<html>
+<head>
+	<script>
+		function Change(Arg)
+		{
+			var arr = ['5.jpg','6.jpg','7.jpg','8.jpg'];
+			document.getElementById("iimg").src = arr[Arg];
+		}
+	</script>
+</head>
+<center>
+	<img src="5.jpg" width="40%" id="iimg" height="400px"><hr>
+	<input type="button" value="1" onclick="Change(0)">
+	<input type="button" value="2" onclick="Change(1)">
+	<input type="button" value="3" onclick="Change(2)">
+	<input type="button" value="4" onclick="Change(3)">
+</center>
+</html>

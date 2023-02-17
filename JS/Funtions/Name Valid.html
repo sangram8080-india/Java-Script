@@ -1,0 +1,36 @@
+<html>
+<head>
+	<script>
+		function Submit()
+		{
+			var r = document.getElementById("name").value;
+			var isvalid = true;
+			for(i=0;i<r.length;i++)
+			{
+				if(  (r.charCodeAt(i)>=65 && r.charCodeAt(i)<=90) || (r.charCodeAt(i)>=97 && r.charCodeAt(i)<=122)  )
+				{
+					isvalid = true;
+				}
+				else
+				{
+					isvalid = false;
+					break;
+				}
+			}
+			if(isvalid==true)
+			{
+				document.getElementById("msg").innerHTML ="Valid";
+			}
+			else
+			{
+				document.getElementById("msg").innerHTML = "**Only Alpha Valid";
+				document.getElementById("msg").style.color="red";
+			}
+		}
+	</script>
+</head>
+<body>
+	Name <input type="text" id="name"><span id="msg"></span><br><br>
+	<input type="button" value="Submit" onclick="Submit()">
+</body>
+</html>

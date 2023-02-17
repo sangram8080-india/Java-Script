@@ -1,0 +1,52 @@
+<html>
+<head>
+	<script>
+		function Main()
+		{
+			alert("1.Add\n2.Sub\n3.Mul\n4.Div");
+			var op = parseInt(prompt("Enter Op :- "));
+			if(op==1)
+				Add();
+			else if(op==2)
+				Sub();		
+			else if(op==3)
+				Mul();
+			else if(op==4)
+				Div();
+		}
+		Main();
+		
+		function Add()
+		{
+			var num1 =  parseInt(prompt("Enter First No "));
+			var num2 =  parseInt(prompt("Enter Second No "));
+			var sum = num1+num2;
+			document.write("Sum is "+sum);
+		}
+		function Sub()
+		{
+			var num1 =  parseInt(prompt("Enter First No "));
+			var num2 =  parseInt(prompt("Enter Second No "));
+			var sub = num1-num2;
+			document.write("Sub is "+sub);
+		}
+		function Mul()
+		{
+			var num1 =  parseInt(prompt("Enter First No "));
+			var num2 =  parseInt(prompt("Enter Second No "));
+			var mul = num1*num2;
+			document.write("Mul is "+mul);
+		}
+		function Div()
+		{
+			var num1 =  parseInt(prompt("Enter First No "));
+			var num2 =  parseInt(prompt("Enter Second No "));
+			var div = num1/num2;
+			document.write("Div is "+div);
+		}
+	</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+<html>
+<head>
+<style>
+body{margin:0;padding:0;}
+ #right{background:#FF6655; height:600px; width:85%; margin:auto;}
+.box{background:orange; height:300px; width:300px; ,margin:auto;}
+#left{background:white;height:80px; width:100%;float:left;}
+#left ul li{list-style:none;float:left;}
+#left ul li a{text-decoration:none;padding:20px 20px;line-height:40px;}
+#left ul li a:hover{background:#ccc;padding:20px 20px;color:white;}
+
+</style>
+
+<script>
+	function Myload()
+	{
+		Closeall();
+	}
+	function Closeall()
+	{
+		var arr = ['d1','d2','d3','d4','d5','d6'];
+		for(var i=0;i<arr.length;i++)
+		{
+			document.getElementById(arr[i]).style.display="none";
+		}
+	}
+	function Multi(arg)
+	{
+		Closeall();
+		var arr = ['d1','d2','d3','d4','d5','d6'];
+		document.getElementById(arr[arg]).style.display="block";
+	}
+</script>
+</head>
+<body onload="Myload()">
+	
+	<div id="left">
+	<ul>
+		<li><a href="#" onclick="Multi(0)">Apple</a><br><br>  </li>
+		<li><a href="#" onclick="Multi(1)">Samsung</a><br><br></li>
+		<li><a href="#" onclick="Multi(2)">Mi</a><br><br>     </li>
+		<li><a href="#" onclick="Multi(3)">Vivo</a><br><br>   </li>
+		<li><a href="#" onclick="Multi(4)">Nokia</a><br><br>  </li>
+		<li><a href="#" onclick="Multi(5)">Oppo</a><br><br>		</li>
+		</ul>
+	</div>
+	<div id="head">
+	
+	</div>
+	<div id="right">
+		<div id="d1">
+			<div class="box">
+				<div id="d1">
+			<img src="d1.jpg" width="300px">
+			<img src="d2.jpg" width="300px">
+			<img src="d3.jpg" width="300px">
+			<img src="d4.jpg" width="300px">
+		</div>
+			</div>
+		</div>
+		<div id="d2">
+			<div class="box">
+		<div id="d2">
+			<img src="d1.jpg" width="300px">
+			<img src="d2.jpg" width="300px">
+			<img src="d3.jpg" width="300px">
+			<img src="d4.jpg" width="300px">
+		</div>
+			</div>
+		</div>
+		<div id="d3">
+			<img src="d1.jpg" width="300px">
+			<img src="d2.jpg" width="300px">
+			<img src="d3.jpg" width="300px">
+			<img src="d4.jpg" width="300px">
+		</div>
+		<div id="d4">
+			<div class="box">
+				<div id="d4">
+			<img src="d1.jpg" width="300px">
+			<img src="d2.jpg" width="300px">
+			<img src="d3.jpg" width="300px">
+			<img src="d4.jpg" width="300px">
+		</div>
+			</div>
+		</div>
+		<div id="d5">
+			<div class="box">
+				<div id="d5">
+			<img src="d1.jpg" width="300px">
+			<img src="d2.jpg" width="300px">
+			<img src="d3.jpg" width="300px">
+			<img src="d4.jpg" width="300px">
+		</div>
+			</div>
+		</div>
+		<div id="d6">
+			<div class="box">
+		<div id="d6">
+			<img src="d1.jpg" width="300px">
+			<img src="d2.jpg" width="300px">
+			<img src="d3.jpg" width="300px">
+			<img src="d4.jpg" width="300px">
+		</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

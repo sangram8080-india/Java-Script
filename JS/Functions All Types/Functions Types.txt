@@ -1,0 +1,8 @@
+1 Funtion No Arg No return
+
+2 Function With Arg No return
+
+3 Function No Arg With return
+
+4 Function With Arg With return
+

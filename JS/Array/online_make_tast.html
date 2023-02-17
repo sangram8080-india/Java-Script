@@ -1,0 +1,94 @@
+		<html>
+   <head>
+     <style>
+	  body{padding:0;margin:0;}
+      #home{background:;height:100px;width:100%;float:left}
+	  #pee{background:;height:500px;width:75.4%;margin:0 auto;}
+	  #Qs{background:orange;height:300px;width:100%;float:left;margin-top:5%;display:block;}
+	  #butt1{background:;float:left;height:50px;width:100px; margin-left:2%;}
+	  #butt2{background:;float:right;height:50px;width:100px; margin-right:2%;}
+	  #QA{font-size:22px;font-weight:bold;padding:0;margin:0;word-spacing:22px;}
+	  #buttA{padding:12px 33px;border:none;background:red;}
+   </style>
+      <script>
+	       function Blink()
+		     {
+			   var txt = document.getElementById("blink");
+			     if(txt.style.color == 'black')
+			       {
+			        txt.style.color='red'; 
+				   }
+			 else if(txt.style.color=='red')
+			    {
+			      txt.style.color ='blue';
+			    }
+			 else if(txt.style.color == 'blue')
+			      {
+				     txt.style.color='orange';
+				  }
+			   else
+			   {
+			    	txt.style.color='black';
+			   }
+		  setTimeout('Blink()',100); 
+	}
+	          -->button (Show And Hide Ans)-->
+	  
+	 
+	 
+      </script>
+ </head>
+  <body onclick ="MyLoad()" onload="Blink()">
+      <div id="home">
+	     <p   style="font-size:42px;font-weight:bold;text-align:center" id="blink">UPSC Online Tast (2019-20)</p><hr>
+	  </div>
+	  <div id="pee">
+	     <div id="Qs">
+		    <div id="d0">
+			  <p id="QA">Q1. Frist Priminister of India?</p><br>
+			   <input type="radio" name ="q1">Jawahar Lal Neharu<br><br>
+			    <input type="radio" name ="q1">Dr. Manmohan Singh<br><br>
+			   <input type="radio" name ="q1">Dr.APJ Abdul Kalam<br><br>
+			   <input type="radio" name ="q1">Lal Bahadur Shastri<br><br>
+		  
+	  <div id="butt1">
+              <input type="button" value="Back" id="buttA" onclick="ch(0)">
+	     </div>
+           <div id="butt2">
+	       <input type="button" value="Next" onclick="ch(1)" id="buttA">
+      </div>	   
+			 </div>
+	     <div id="Qs">
+		    <div id="d1">
+			  <p id="QA">Q2. Word Of Very Big country?</p><br>
+			   <input type="radio" name ="q1">India<br><br>
+			   <input type="radio" name ="q1">Russ<br><br>
+			   <input type="radio" name ="q1">America<br><br>
+			   <input type="radio" name ="q1">Non<br><br>
+			   
+	<div id="butt1">
+     <input type="button" value="Back" id="buttA" onclick="ch(2)">
+	</div>
+   <div id="butt2">
+	   <input type="button" value="Next" onclick="ch(3)" id="buttA">
+   </div>
+			 </div>
+	     <div id="Qs">
+		    <div id="d2">
+			  <p id="QA">Q3. The office Of The Prasident Can Fall Vacant Due To ?</p><br>
+			   <input type="radio" name ="q1">Resignation<br><br>
+			   <input type="radio" name ="q1">Death<br><br>
+			   <input type="radio" name ="q1">Removal<br><br>
+			   <input type="radio" name ="q1">All Of The Above<br><br>
+			  
+	 <div id="butt1">
+         <input type="button" value="Back" id="buttA" onclick="goto(4)">
+	  </div>
+     <div id="butt2">
+	    <input type="button" value="Next" onclick="goto(5)" id="buttA">
+   </div>   
+			 </div>
+		 </div>
+	  </div>
+  </body>
+</html>

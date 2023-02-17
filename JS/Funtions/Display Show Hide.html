@@ -1,0 +1,28 @@
+<html>
+<head>
+<style>
+#box{background:dodgerblue; height:400px; width:400px; display:none;}
+</style>
+	<script>
+		function Show()
+		{
+			var s = document.getElementById("box").style.display="block";
+			s.style.display="block";
+		}
+		function Hide()
+		{
+			var s = document.getElementById("box");
+			s.style.display="none";
+		}
+	</script>
+</head>
+<body>
+<center>
+	<input type="button" value="Show" onclick="Show()">
+	<input type="button" value="Hide" onclick="Hide()"><hr>
+	<div id="box">
+	
+	</div>
+</center>
+</body>
+</html>

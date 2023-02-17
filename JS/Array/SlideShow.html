@@ -1,0 +1,24 @@
+<html>
+<head>
+	<script>
+		var arr = ['aa.jpg','bb.jpg','cc.jpg','dd.jpg'];
+		var i =0;
+		function Slide()
+		{
+			document.getElementById("image").src = arr[i];
+			if(i<arr.length)
+			{
+				i++;
+			}
+			else
+			{
+				i = 0;
+			}
+			setTimeout('Slide()',700);
+		}
+	</script>
+</head>
+<body onload="Slide()">
+	<img id="image" src="5.jpg" width="500px">
+</body>
+</html>
